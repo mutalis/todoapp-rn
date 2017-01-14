@@ -6,6 +6,9 @@ class Header extends Component {
     return (
       <View style={styles.header}>
         <TextInput
+          value={this.props.value}
+          onChangeText={this.props.onChange}
+          onSubmitEditing={this.props.onAddItem}
           placeholder="Whats needs to be done?"
           blurOnSubmit={false}
           returnKeyType="done"
